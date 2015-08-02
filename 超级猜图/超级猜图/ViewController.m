@@ -163,18 +163,73 @@
     
     NSArray *word = model.options;
     
+    CGFloat optionW = 35;
+    CGFloat optionH =35;
+    CGFloat margin = 10;
+    int colum = 7;
+    CGFloat marginLeft = (self.optionsView.frame.size.width- colum * optionW- (colum-1) *margin)/2;
+    
+    
     for (int i = 0; i< word.count; i++) {
         UIButton *btnOpt =  [ [UIButton alloc ]init];
+        
+        //给其唯一一个tag直
+        btnOpt.tag = i;
         
         [btnOpt setBackgroundImage:[UIImage imageNamed:@"btnb1"] forState:UIControlStateNormal];
         [btnOpt setBackgroundImage:[UIImage imageNamed:@"btnb2"] forState:UIControlStateHighlighted];
         
         [btnOpt setTitle:word[i] forState:UIControlStateNormal];
         btnOpt.frame = CGRectMake(0, 0, 35, 35);
-        
+        int colIdx = i % colum;
+        int rowIdx = i / colum;
+        CGFloat optionX = marginLeft+ colIdx*(optionW+margin);
+        CGFloat optionY =  0 +rowIdx *(optionH +margin);
+        btnOpt.frame = CGRectMake(optionX, optionY, optionW, optionH);
         [btnOpt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [self.optionsView addSubview:btnOpt];
+        
+        // click event
+        [btnOpt addTarget:self action:@selector(btnOPtionClick :) forControlEvents:UIControlEventTouchUpInside];
+        
+        
     }
+}
+
+//待选按钮点击事件
+- (void)btnOPtionClick:(UIButton *)sender
+{
+    sender.hidden = YES;
+   // NSString *text = [sender titleForState:UIControlStateNormal];
+    NSString *text = sender.currentTitle;
+    
+    //把按钮文字放到上面 遍历
+       for (UIButton *answerBtn in self.answerView.subviews)
+    {
+        if (answerBtn.currentTitle == nil) {
+            [answerBtn setTitle:text forState:UIControlStateNormal];
+            
+            answerBtn.tag = sender.tag;
+           
+            break;
+        }
+    }
+    
+    //判断答案按钮是否满了
+    
+    BOOL isFull = YES;
+
+    for (UIButton *btnAnswer in self.answerView.subviews) {
+        if (btnAnswer.currentTitle == nil) {
+            isFull = NO;
+            
+            break;
+        }
+    }
+    if (isFull) {
+        self.optionsView.userInteractionEnabled = NO;
+    }
+    
 }
 //加载数据
 
@@ -208,8 +263,28 @@
         
         btnAnswer.frame = CGRectMake(answerX, answerY, answerW, answerH);
         
+        //设置颜色
+        [btnAnswer setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
         [self.answerView addSubview:btnAnswer];
+        
+        [btnAnswer addTarget:self action:@selector(btnAnswerclick:) forControlEvents:UIControlEventTouchUpInside];
     }
+    
+    
 
+}
+-(void)btnAnswerclick:(UIButton *)sender
+{
+    self.optionsView.userInteractionEnabled = YES;
+    for (UIButton *option in self.optionsView.subviews) {
+
+        if (sender.tag == option.tag) {
+            option.hidden = NO;
+            break;
+        }}
+    
+    
+    [sender setTitle:nil forState:UIControlStateNormal];
 }
 @end
