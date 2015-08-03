@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "CZQuestion.h"
-@interface ViewController ()
+@interface ViewController () <UIAlertViewDelegate>
 @property(nonatomic,strong)NSArray *questions;
 
 @property(nonatomic,assign)int index;
@@ -26,6 +26,7 @@
 - (IBAction)btnNextClick;
 - (IBAction)bigImage;
 - (IBAction)btnIconClick:(UIButton *)sender;
+- (IBAction)btnTipClick;
 
 @end
 
@@ -73,7 +74,7 @@
 }
 
 - (IBAction)btnNextClick {
-    NSLog(@"sss");
+   
     [self nextQuestion];
 }
 
@@ -117,6 +118,29 @@
 
 }
 
+- (IBAction)btnTipClick {
+    //－1000
+    [self addScore:-1000];
+    
+    //答案 清空
+    for (UIButton *btnAnswer in self.answerView.subviews) {
+        [self btnAnswerclick:btnAnswer];
+    }
+    
+    //给出提示
+    
+    CZQuestion *model = self.questions[self.index];
+    
+    NSString *fristChar = [model.answer substringToIndex:1];
+    
+    for (UIButton *btnOpt in self.optionsView.subviews) {
+        if ([btnOpt.currentTitle isEqualToString:fristChar]) {
+            [self btnOPtionClick:btnOpt];
+            break;
+        }
+           }
+}
+
 - (void)smallImage
 {
     
@@ -137,11 +161,27 @@
         }];
 }
 
+//实现uialertview代理方法
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        self.index =-1;
+        [self nextQuestion];
+    }
+}
+
 
 -(void)nextQuestion
 {
     self.index++;
     
+    // 索引越界
+    
+    if (self.index == self.questions.count) {
+      UIAlertView *alertView  =[[UIAlertView alloc] initWithTitle:@"操作提示" message:@"恭喜通关" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];
+        [alertView show];
+        return;
+    }
     CZQuestion *model = self.questions[self.index];
     [self settingData:model];
     [self makeAnswerButton:model];
@@ -218,19 +258,60 @@
     //判断答案按钮是否满了
     
     BOOL isFull = YES;
-
+    NSMutableString *userInput = [NSMutableString string];
+    
+    
     for (UIButton *btnAnswer in self.answerView.subviews) {
         if (btnAnswer.currentTitle == nil) {
             isFull = NO;
             
             break;
+        }else
+        {
+            [userInput appendString:btnAnswer.currentTitle];
         }
     }
+    //如果答案按钮满了 判断是否正确 正确下一题 错误字体变红
     if (isFull) {
         self.optionsView.userInteractionEnabled = NO;
+        CZQuestion *model = self.questions[self.index];
+        
+        if ([model.answer isEqualToString:userInput]) {
+            
+            
+            [self settingAnswerButtonTitleColor:[UIColor blueColor]];
+            
+            //进入下一题 0.5秒后
+            [self performSelector:@selector(nextQuestion) withObject:nil afterDelay:0.5];
+            
+            [self addScore:100];
+        }else
+        {
+            [self settingAnswerButtonTitleColor:[UIColor redColor]];
+        }
+        
     }
     
+   
+    
+    
 }
+//提取一个方法 设置颜色
+- (void)settingAnswerButtonTitleColor:(UIColor *)color
+{
+    for (UIButton *btnAnswer in self.answerView.subviews) {
+        [btnAnswer setTitleColor:color forState:UIControlStateNormal];
+    }
+}
+//加分或者减分按钮
+- (void)addScore:(int)score
+{
+    NSString *str = self.btnScore.currentTitle;
+    int currentScore = str.intValue;
+    currentScore = currentScore+score;
+    [self.btnScore setTitle:[NSString stringWithFormat:@"%d",currentScore] forState:UIControlStateNormal];
+}
+
 //加载数据
 
 -(void)settingData:(CZQuestion *)model
@@ -246,6 +327,8 @@
 //创建答案按钮
 -(void)makeAnswerButton:(CZQuestion *)model
 {
+    
+    self.optionsView.userInteractionEnabled = YES;
     [self.answerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
     NSUInteger len = model.answer.length;
@@ -277,6 +360,8 @@
 -(void)btnAnswerclick:(UIButton *)sender
 {
     self.optionsView.userInteractionEnabled = YES;
+    
+    [self settingAnswerButtonTitleColor:[UIColor blackColor]];
     for (UIButton *option in self.optionsView.subviews) {
 
         if (sender.tag == option.tag) {
