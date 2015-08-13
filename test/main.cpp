@@ -7,28 +7,18 @@
 //
 
 #include <stdio.h>
+#include "stdlib.h"
+#define MAX(X,Y)(((X)>(Y))?(X):(Y))
+#define MAX(X,Y)(((X)<(Y))?(X):(Y))
+#define SQR(X) (X*X)
+#define DEBUG
 
 int main()
 {
-        int fab[100001]={0};
-    fab[0]=1;
-    fab[1]=1;
-    for(int i=2;i<=100001;i++)
-    {
-        fab[i]=fab[i-1]+fab[i-2];
-        fab[i]=fab[i]%1000000;
-    }
+    int a,b =3;
+    a = SQR(b+2);
+    printf("a = %d\n",a);
     
-    
-    int num;
-    while(scanf("%d",&num)!=EOF)
-    {
-        if (num<29)
-        {
-            printf("%d\n",fab[num]);
-        }
-        else printf("%06d\n",fab[num]);
-    }
     
     return 0;
     

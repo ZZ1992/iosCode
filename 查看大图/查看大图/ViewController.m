@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scollView;
 @property (nonatomic,strong) UIImageView *imgView;
 
@@ -48,6 +48,11 @@
     self.scollView.contentOffset = CGPointMake(100, 100);
     self.scollView.bounces = NO;
     
+    
+    self.scollView.delegate = self;
+    self.scollView.maximumZoomScale=2.0;
+    self.scollView.minimumZoomScale=0.2;
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
     btn.center = self.view.center;
     [self.view addSubview:btn];
@@ -62,6 +67,12 @@
     offset.y +=20;
     self.scollView.contentOffset = offset;
     
+}
+
+//代理方法
+-(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.imgView;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
