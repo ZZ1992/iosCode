@@ -39,7 +39,7 @@
                 <outlet property="imgViewIcon" destination="n9e-CC-ltG" id="hrc-rt-ncI"/>
                 <outlet property="lblName" destination="KVz-ou-G15" id="2uh-J4-Yvs"/>
             </connections>
-            <point key="canvasLocation" x="113.5" y="127"/>
+            <point key="canvasLocation" x="34.5" y="235"/>
         </view>
     </objects>
     <resources>

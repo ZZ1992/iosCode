@@ -36,6 +36,17 @@
     [super viewDidLoad];
     [self tableView];
     self.tableView.rowHeight = 80;
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    UIView *head = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    head.backgroundColor = [UIColor redColor];
+     self.tableView.tableHeaderView = head;
+    
+    UIView *foot = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+    foot.backgroundColor = [UIColor redColor];
+
+   //foot 做刷新  head 做广告
+    self.tableView.tableFooterView =foot;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -45,33 +56,56 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    
+    
+    
+    //为了加入缓存池，换个代码 下面这句重写
+    //UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+//static 静态变量 能够保证系统为变量在内存中只分配一次内存空间,但不能创建太多，因为不会被释放，只有程序销毁时，才会释放
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+        
+         //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.accessoryType =UITableViewCellAccessoryDetailButton;
+        // 设置背景图和选中 的图
+       /* cell.backgroundColor = [UIColor redColor];
+        UIImage *bgimg = [UIImage imageNamed:@"img_01"];
+        
+        cell.backgroundView = [[UIImageView alloc] initWithImage:bgimg];
+        UIImage *selectBGimg = [UIImage imageNamed:@"img_02"];
+        cell.selectedBackgroundView = [[UIImageView alloc]initWithImage:selectBGimg];*/
+
+    }
+    
     Hero *hero = self.heros[indexPath.row];
     cell.textLabel.text = hero.name;
     cell.imageView.image =[UIImage imageNamed:hero.icon];
     cell.detailTextLabel.text = hero.intro;
     
-    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    //cell.accessoryType =UITableViewCellAccessoryDetailButton;
+   
     
     
     
-    UISwitch * swicher = [[UISwitch alloc]init];
+   　/* 
+         开关
+     UISwitch * swicher = [[UISwitch alloc]init];
     
     [swicher addTarget:self action:@selector(swtichChanged :) forControlEvents:UIControlEventValueChanged];
-    cell.accessoryView = swicher;
+    cell.accessoryView = swicher;*/
     return cell;
 }
+//开关
 - (void)swtichChanged:(UISwitch *)sender
 {
     NSLog(@"%s  %@",__func__,sender);
 }
-
+// 详细
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-}
--(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
+ //按钮
+}-(void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     
 }
