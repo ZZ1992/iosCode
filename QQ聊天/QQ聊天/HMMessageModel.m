@@ -23,15 +23,15 @@
     return [[self alloc] initWithDict:dict];
 }
 
-+ (NSArray *)Messages
-{
-    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"messages.plist" ofType:nil]];
-    NSMutableArray *arrayM = [NSMutableArray array];
-    for (NSDictionary *dict in array) {
-        [arrayM addObject:[self messageWithDict:dict]];
-    }
-    
-    return arrayM;
-}
+//+ (NSArray *)Messages
+//{
+//    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"messages.plist" ofType:nil]];
+//    NSMutableArray *arrayM = [NSMutableArray array];
+//    for (NSDictionary *dict in array) {
+//        [arrayM addObject:[self messageWithDict:dict]];
+//    }
+//    
+//    return arrayM;
+//}
 
 @end

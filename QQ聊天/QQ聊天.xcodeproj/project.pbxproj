@@ -17,6 +17,9 @@
 		DC041A8F1B8EA6E200CD710C /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC041A8E1B8EA6E200CD710C /* messages.plist */; };
 		DC041A981B8EAAFB00CD710C /* HMMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC041A971B8EAAFB00CD710C /* HMMessageCell.m */; };
 		DC041A9C1B8EABA800CD710C /* HMMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC041A9B1B8EABA800CD710C /* HMMessageModel.m */; };
+		DC041AA01B8EFACB00CD710C /* HMMessageFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DC041A9F1B8EFACB00CD710C /* HMMessageFrameModel.m */; };
+		DC95090A1B902BCA009709BD /* UIImage+resizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9509091B902BCA009709BD /* UIImage+resizeImage.m */; };
+		DC95090C1B904C37009709BD /* autoReplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC95090B1B904C37009709BD /* autoReplay.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		DC041A971B8EAAFB00CD710C /* HMMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMessageCell.m; sourceTree = "<group>"; };
 		DC041A9A1B8EABA800CD710C /* HMMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMessageModel.h; sourceTree = "<group>"; };
 		DC041A9B1B8EABA800CD710C /* HMMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMessageModel.m; sourceTree = "<group>"; };
+		DC041A9D1B8EF9A000CD710C /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		DC041A9E1B8EFACB00CD710C /* HMMessageFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMMessageFrameModel.h; sourceTree = "<group>"; };
+		DC041A9F1B8EFACB00CD710C /* HMMessageFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMMessageFrameModel.m; sourceTree = "<group>"; };
+		DC9509081B902BCA009709BD /* UIImage+resizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+resizeImage.h"; sourceTree = "<group>"; };
+		DC9509091B902BCA009709BD /* UIImage+resizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+resizeImage.m"; sourceTree = "<group>"; };
+		DC95090B1B904C37009709BD /* autoReplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = autoReplay.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,7 @@
 			children = (
 				DC041A691B8EA4EA00CD710C /* Info.plist */,
 				DC041A8E1B8EA6E200CD710C /* messages.plist */,
+				DC95090B1B904C37009709BD /* autoReplay.plist */,
 				DC041A6A1B8EA4EA00CD710C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -139,6 +149,8 @@
 		DC041A911B8EAA5B00CD710C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DC041A9E1B8EFACB00CD710C /* HMMessageFrameModel.h */,
+				DC041A9F1B8EFACB00CD710C /* HMMessageFrameModel.m */,
 				DC041A9A1B8EABA800CD710C /* HMMessageModel.h */,
 				DC041A9B1B8EABA800CD710C /* HMMessageModel.m */,
 			);
@@ -168,6 +180,9 @@
 			children = (
 				DC041A6D1B8EA4EA00CD710C /* AppDelegate.m */,
 				DC041A6C1B8EA4EA00CD710C /* AppDelegate.h */,
+				DC9509081B902BCA009709BD /* UIImage+resizeImage.h */,
+				DC9509091B902BCA009709BD /* UIImage+resizeImage.m */,
+				DC041A9D1B8EF9A000CD710C /* Constant.h */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -252,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC95090C1B904C37009709BD /* autoReplay.plist in Resources */,
 				DC041A8F1B8EA6E200CD710C /* messages.plist in Resources */,
 				DC041A741B8EA4EA00CD710C /* Main.storyboard in Resources */,
 				DC041A791B8EA4EA00CD710C /* LaunchScreen.xib in Resources */,
@@ -277,6 +293,8 @@
 				DC041A9C1B8EABA800CD710C /* HMMessageModel.m in Sources */,
 				DC041A711B8EA4EA00CD710C /* ViewController.m in Sources */,
 				DC041A6E1B8EA4EA00CD710C /* AppDelegate.m in Sources */,
+				DC041AA01B8EFACB00CD710C /* HMMessageFrameModel.m in Sources */,
+				DC95090A1B902BCA009709BD /* UIImage+resizeImage.m in Sources */,
 				DC041A6B1B8EA4EA00CD710C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +490,7 @@
 				DC041A8A1B8EA4EA00CD710C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC041A8B1B8EA4EA00CD710C /* Build configuration list for PBXNativeTarget "QQ聊天Tests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +499,7 @@
 				DC041A8D1B8EA4EA00CD710C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

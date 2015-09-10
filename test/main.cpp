@@ -8,16 +8,11 @@
 
 #include <stdio.h>
 #include "stdlib.h"
-#define MAX(X,Y)(((X)>(Y))?(X):(Y))
-#define MAX(X,Y)(((X)<(Y))?(X):(Y))
-#define SQR(X) (X*X)
-#define DEBUG
+
 
 int main()
 {
-    int a,b =3;
-    a = SQR(b+2);
-    printf("a = %d\n",a);
+    int a1,a2,a3,a4,a5,a6,a7,a8;
     
     
     return 0;

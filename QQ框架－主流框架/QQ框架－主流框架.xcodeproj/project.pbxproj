@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCC1A74F1B9D79D800C1BFD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A74E1B9D79D800C1BFD9 /* main.m */; };
+		DCC1A7521B9D79D800C1BFD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A7511B9D79D800C1BFD9 /* AppDelegate.m */; };
+		DCC1A7551B9D79D800C1BFD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A7541B9D79D800C1BFD9 /* ViewController.m */; };
+		DCC1A7581B9D79D800C1BFD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A7561B9D79D800C1BFD9 /* Main.storyboard */; };
+		DCC1A75A1B9D79D800C1BFD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A7591B9D79D800C1BFD9 /* Images.xcassets */; };
+		DCC1A75D1B9D79D800C1BFD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC1A75B1B9D79D800C1BFD9 /* LaunchScreen.xib */; };
+		DCC1A7691B9D79D800C1BFD9 /* QQ_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A7681B9D79D800C1BFD9 /* QQ_______Tests.m */; };
+		DCC1A7741B9DA0F500C1BFD9 /* HMContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A7731B9DA0F500C1BFD9 /* HMContactsTableViewController.m */; };
+		DCC1A7771B9DA29900C1BFD9 /* HMAddTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC1A7761B9DA29900C1BFD9 /* HMAddTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCC1A7631B9D79D800C1BFD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCC1A7411B9D79D800C1BFD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCC1A7481B9D79D800C1BFD9;
+			remoteInfo = "QQ框架－主流框架";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCC1A7491B9D79D800C1BFD9 /* QQ框架－主流框架.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QQ框架－主流框架.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC1A74D1B9D79D800C1BFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC1A74E1B9D79D800C1BFD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCC1A7501B9D79D800C1BFD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCC1A7511B9D79D800C1BFD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCC1A7531B9D79D800C1BFD9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DCC1A7541B9D79D800C1BFD9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DCC1A7571B9D79D800C1BFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCC1A7591B9D79D800C1BFD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCC1A75C1B9D79D800C1BFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DCC1A7621B9D79D800C1BFD9 /* QQ框架－主流框架Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QQ框架－主流框架Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC1A7671B9D79D800C1BFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC1A7681B9D79D800C1BFD9 /* QQ_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "QQ_______Tests.m"; sourceTree = "<group>"; };
+		DCC1A7721B9DA0F500C1BFD9 /* HMContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMContactsTableViewController.h; sourceTree = "<group>"; };
+		DCC1A7731B9DA0F500C1BFD9 /* HMContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMContactsTableViewController.m; sourceTree = "<group>"; };
+		DCC1A7751B9DA29900C1BFD9 /* HMAddTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAddTableViewController.h; sourceTree = "<group>"; };
+		DCC1A7761B9DA29900C1BFD9 /* HMAddTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAddTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCC1A7461B9D79D800C1BFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC1A75F1B9D79D800C1BFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCC1A7401B9D79D800C1BFD9 = {
+			isa = PBXGroup;
+			children = (
+				DCC1A74B1B9D79D800C1BFD9 /* QQ框架－主流框架 */,
+				DCC1A7651B9D79D800C1BFD9 /* QQ框架－主流框架Tests */,
+				DCC1A74A1B9D79D800C1BFD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCC1A74A1B9D79D800C1BFD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCC1A7491B9D79D800C1BFD9 /* QQ框架－主流框架.app */,
+				DCC1A7621B9D79D800C1BFD9 /* QQ框架－主流框架Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCC1A74B1B9D79D800C1BFD9 /* QQ框架－主流框架 */ = {
+			isa = PBXGroup;
+			children = (
+				DCC1A7501B9D79D800C1BFD9 /* AppDelegate.h */,
+				DCC1A7511B9D79D800C1BFD9 /* AppDelegate.m */,
+				DCC1A7531B9D79D800C1BFD9 /* ViewController.h */,
+				DCC1A7541B9D79D800C1BFD9 /* ViewController.m */,
+				DCC1A7721B9DA0F500C1BFD9 /* HMContactsTableViewController.h */,
+				DCC1A7751B9DA29900C1BFD9 /* HMAddTableViewController.h */,
+				DCC1A7761B9DA29900C1BFD9 /* HMAddTableViewController.m */,
+				DCC1A7731B9DA0F500C1BFD9 /* HMContactsTableViewController.m */,
+				DCC1A7561B9D79D800C1BFD9 /* Main.storyboard */,
+				DCC1A7591B9D79D800C1BFD9 /* Images.xcassets */,
+				DCC1A75B1B9D79D800C1BFD9 /* LaunchScreen.xib */,
+				DCC1A74C1B9D79D800C1BFD9 /* Supporting Files */,
+			);
+			path = "QQ框架－主流框架";
+			sourceTree = "<group>";
+		};
+		DCC1A74C1B9D79D800C1BFD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC1A74D1B9D79D800C1BFD9 /* Info.plist */,
+				DCC1A74E1B9D79D800C1BFD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCC1A7651B9D79D800C1BFD9 /* QQ框架－主流框架Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCC1A7681B9D79D800C1BFD9 /* QQ_______Tests.m */,
+				DCC1A7661B9D79D800C1BFD9 /* Supporting Files */,
+			);
+			path = "QQ框架－主流框架Tests";
+			sourceTree = "<group>";
+		};
+		DCC1A7661B9D79D800C1BFD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCC1A7671B9D79D800C1BFD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCC1A7481B9D79D800C1BFD9 /* QQ框架－主流框架 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC1A76C1B9D79D800C1BFD9 /* Build configuration list for PBXNativeTarget "QQ框架－主流框架" */;
+			buildPhases = (
+				DCC1A7451B9D79D800C1BFD9 /* Sources */,
+				DCC1A7461B9D79D800C1BFD9 /* Frameworks */,
+				DCC1A7471B9D79D800C1BFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QQ框架－主流框架";
+			productName = "QQ框架－主流框架";
+			productReference = DCC1A7491B9D79D800C1BFD9 /* QQ框架－主流框架.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCC1A7611B9D79D800C1BFD9 /* QQ框架－主流框架Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCC1A76F1B9D79D800C1BFD9 /* Build configuration list for PBXNativeTarget "QQ框架－主流框架Tests" */;
+			buildPhases = (
+				DCC1A75E1B9D79D800C1BFD9 /* Sources */,
+				DCC1A75F1B9D79D800C1BFD9 /* Frameworks */,
+				DCC1A7601B9D79D800C1BFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC1A7641B9D79D800C1BFD9 /* PBXTargetDependency */,
+			);
+			name = "QQ框架－主流框架Tests";
+			productName = "QQ框架－主流框架Tests";
+			productReference = DCC1A7621B9D79D800C1BFD9 /* QQ框架－主流框架Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCC1A7411B9D79D800C1BFD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = YaguangZhu;
+				TargetAttributes = {
+					DCC1A7481B9D79D800C1BFD9 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DCC1A7611B9D79D800C1BFD9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DCC1A7481B9D79D800C1BFD9;
+					};
+				};
+			};
+			buildConfigurationList = DCC1A7441B9D79D800C1BFD9 /* Build configuration list for PBXProject "QQ框架－主流框架" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCC1A7401B9D79D800C1BFD9;
+			productRefGroup = DCC1A74A1B9D79D800C1BFD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCC1A7481B9D79D800C1BFD9 /* QQ框架－主流框架 */,
+				DCC1A7611B9D79D800C1BFD9 /* QQ框架－主流框架Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCC1A7471B9D79D800C1BFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC1A7581B9D79D800C1BFD9 /* Main.storyboard in Resources */,
+				DCC1A75D1B9D79D800C1BFD9 /* LaunchScreen.xib in Resources */,
+				DCC1A75A1B9D79D800C1BFD9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC1A7601B9D79D800C1BFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCC1A7451B9D79D800C1BFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC1A7551B9D79D800C1BFD9 /* ViewController.m in Sources */,
+				DCC1A7741B9DA0F500C1BFD9 /* HMContactsTableViewController.m in Sources */,
+				DCC1A7771B9DA29900C1BFD9 /* HMAddTableViewController.m in Sources */,
+				DCC1A7521B9D79D800C1BFD9 /* AppDelegate.m in Sources */,
+				DCC1A74F1B9D79D800C1BFD9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCC1A75E1B9D79D800C1BFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC1A7691B9D79D800C1BFD9 /* QQ_______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCC1A7641B9D79D800C1BFD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCC1A7481B9D79D800C1BFD9 /* QQ框架－主流框架 */;
+			targetProxy = DCC1A7631B9D79D800C1BFD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCC1A7561B9D79D800C1BFD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC1A7571B9D79D800C1BFD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCC1A75B1B9D79D800C1BFD9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCC1A75C1B9D79D800C1BFD9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCC1A76A1B9D79D800C1BFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCC1A76B1B9D79D800C1BFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCC1A76D1B9D79D800C1BFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "QQ框架－主流框架/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCC1A76E1B9D79D800C1BFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "QQ框架－主流框架/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DCC1A7701B9D79D800C1BFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QQ框架－主流框架Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQ框架－主流框架.app/QQ框架－主流框架";
+			};
+			name = Debug;
+		};
+		DCC1A7711B9D79D800C1BFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QQ框架－主流框架Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QQ框架－主流框架.app/QQ框架－主流框架";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCC1A7441B9D79D800C1BFD9 /* Build configuration list for PBXProject "QQ框架－主流框架" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC1A76A1B9D79D800C1BFD9 /* Debug */,
+				DCC1A76B1B9D79D800C1BFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCC1A76C1B9D79D800C1BFD9 /* Build configuration list for PBXNativeTarget "QQ框架－主流框架" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC1A76D1B9D79D800C1BFD9 /* Debug */,
+				DCC1A76E1B9D79D800C1BFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DCC1A76F1B9D79D800C1BFD9 /* Build configuration list for PBXNativeTarget "QQ框架－主流框架Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCC1A7701B9D79D800C1BFD9 /* Debug */,
+				DCC1A7711B9D79D800C1BFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCC1A7411B9D79D800C1BFD9 /* Project object */;
+}

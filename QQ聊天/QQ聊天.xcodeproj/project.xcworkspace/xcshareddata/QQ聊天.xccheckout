@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>31C8A7DF-0BBE-4759-9E0A-7486528599B1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>QQ聊天</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7FC548DD8A4E676C496DFCAD93D088491796034C</key>
 		<string>https://github.com/zhuyaguang/iosCode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QQ聊天/QQ聊天.xcodeproj/project.xcworkspace</string>
+	<string>QQ聊天/QQ聊天.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7FC548DD8A4E676C496DFCAD93D088491796034C</key>

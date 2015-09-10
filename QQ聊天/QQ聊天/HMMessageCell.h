@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-@class HMMessageModel;
+//@class HMMessageModel;
+@class HMMessageFrameModel;
 @interface HMMessageCell : UITableViewCell
 
-@property(nonatomic,strong) HMMessageModel *messageModel;
++ (instancetype)messageCellWithTableView:(UITableView *)tableview;
+
+//@property(nonatomic,strong) HMMessageModel *messageModel;
+
+// frame 的模型
+@property(nonatomic,strong) HMMessageFrameModel *frameModel;
+
+
+
 @end

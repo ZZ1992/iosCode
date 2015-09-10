@@ -17,11 +17,12 @@ typedef enum {
 @property(nonatomic,copy) NSString *time;
 @property(nonatomic,assign) HMMessageModeltype type;
 
+@property(nonatomic,assign)BOOL hideTime;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 
 + (instancetype)messageWithDict:(NSDictionary *)dict;
 
-+ (NSArray *)Messages;
+//+ (NSArray *)Messages;
 
 @end
