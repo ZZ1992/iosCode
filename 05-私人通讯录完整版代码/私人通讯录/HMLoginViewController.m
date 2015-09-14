@@ -13,6 +13,7 @@
 #import "HMContactsTableViewController.h"
 
 @interface HMLoginViewController ()<UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *accountField;
 @property (weak, nonatomic) IBOutlet UITextField *pwdField;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
