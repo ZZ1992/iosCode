@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCF3DCBC1BB032A700CBB5A7 /* YZSelectOilTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3DCBB1BB032A700CBB5A7 /* YZSelectOilTableViewController.m */; };
+		DCF3DCC31BB0330E00CBB5A7 /* HMStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3DCBE1BB0330E00CBB5A7 /* HMStatusCell.m */; };
+		DCF3DCC41BB0330E00CBB5A7 /* HMStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3DCC01BB0330E00CBB5A7 /* HMStatus.m */; };
+		DCF3DCC51BB0330E00CBB5A7 /* StatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF3DCC21BB0330E00CBB5A7 /* StatusFrame.m */; };
+		DCF3DCC71BB0333600CBB5A7 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCC61BB0333600CBB5A7 /* statuses.plist */; };
+		DCF3DCCF1BB0350500CBB5A7 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCC91BB0350500CBB5A7 /* 1.jpeg */; };
+		DCF3DCD01BB0350500CBB5A7 /* 1516159990.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCCA1BB0350500CBB5A7 /* 1516159990.jpeg */; };
+		DCF3DCD11BB0350500CBB5A7 /* 238221586.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCCB1BB0350500CBB5A7 /* 238221586.jpeg */; };
+		DCF3DCD21BB0350500CBB5A7 /* 424324.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCCC1BB0350500CBB5A7 /* 424324.jpeg */; };
+		DCF3DCD31BB0350500CBB5A7 /* 50.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCCD1BB0350500CBB5A7 /* 50.jpeg */; };
+		DCF3DCD41BB0350500CBB5A7 /* 7735164184.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCCE1BB0350500CBB5A7 /* 7735164184.jpeg */; };
+		DCF3DCDB1BB0351100CBB5A7 /* 3461756566.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCD61BB0351100CBB5A7 /* 3461756566.jpeg */; };
+		DCF3DCDC1BB0351100CBB5A7 /* 4934348604.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCD71BB0351100CBB5A7 /* 4934348604.jpeg */; };
+		DCF3DCDD1BB0351100CBB5A7 /* 603564546.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCD81BB0351100CBB5A7 /* 603564546.jpeg */; };
+		DCF3DCDE1BB0351100CBB5A7 /* 6289891986.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCD91BB0351100CBB5A7 /* 6289891986.jpeg */; };
+		DCF3DCDF1BB0351100CBB5A7 /* 926680527.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DCF3DCDA1BB0351100CBB5A7 /* 926680527.jpeg */; };
 		DCF855201BA5048C00FC3990 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF8551F1BA5048C00FC3990 /* main.m */; };
 		DCF855231BA5048C00FC3990 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF855221BA5048C00FC3990 /* AppDelegate.m */; };
 		DCF855261BA5048C00FC3990 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF855251BA5048C00FC3990 /* ViewController.m */; };
@@ -31,6 +47,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCF3DCBA1BB032A700CBB5A7 /* YZSelectOilTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZSelectOilTableViewController.h; sourceTree = "<group>"; };
+		DCF3DCBB1BB032A700CBB5A7 /* YZSelectOilTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZSelectOilTableViewController.m; sourceTree = "<group>"; };
+		DCF3DCBD1BB0330E00CBB5A7 /* HMStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStatusCell.h; sourceTree = "<group>"; };
+		DCF3DCBE1BB0330E00CBB5A7 /* HMStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStatusCell.m; sourceTree = "<group>"; };
+		DCF3DCBF1BB0330E00CBB5A7 /* HMStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMStatus.h; sourceTree = "<group>"; };
+		DCF3DCC01BB0330E00CBB5A7 /* HMStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMStatus.m; sourceTree = "<group>"; };
+		DCF3DCC11BB0330E00CBB5A7 /* StatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusFrame.h; sourceTree = "<group>"; };
+		DCF3DCC21BB0330E00CBB5A7 /* StatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusFrame.m; sourceTree = "<group>"; };
+		DCF3DCC61BB0333600CBB5A7 /* statuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
+		DCF3DCC91BB0350500CBB5A7 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		DCF3DCCA1BB0350500CBB5A7 /* 1516159990.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1516159990.jpeg; sourceTree = "<group>"; };
+		DCF3DCCB1BB0350500CBB5A7 /* 238221586.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 238221586.jpeg; sourceTree = "<group>"; };
+		DCF3DCCC1BB0350500CBB5A7 /* 424324.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 424324.jpeg; sourceTree = "<group>"; };
+		DCF3DCCD1BB0350500CBB5A7 /* 50.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 50.jpeg; sourceTree = "<group>"; };
+		DCF3DCCE1BB0350500CBB5A7 /* 7735164184.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7735164184.jpeg; sourceTree = "<group>"; };
+		DCF3DCD61BB0351100CBB5A7 /* 3461756566.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3461756566.jpeg; sourceTree = "<group>"; };
+		DCF3DCD71BB0351100CBB5A7 /* 4934348604.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4934348604.jpeg; sourceTree = "<group>"; };
+		DCF3DCD81BB0351100CBB5A7 /* 603564546.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 603564546.jpeg; sourceTree = "<group>"; };
+		DCF3DCD91BB0351100CBB5A7 /* 6289891986.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6289891986.jpeg; sourceTree = "<group>"; };
+		DCF3DCDA1BB0351100CBB5A7 /* 926680527.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 926680527.jpeg; sourceTree = "<group>"; };
 		DCF8551A1BA5048C00FC3990 /* 爱皂坊beta1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "爱皂坊beta1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF8551E1BA5048C00FC3990 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF8551F1BA5048C00FC3990 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,6 +107,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCF3DCC81BB0350500CBB5A7 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3DCC91BB0350500CBB5A7 /* 1.jpeg */,
+				DCF3DCCA1BB0350500CBB5A7 /* 1516159990.jpeg */,
+				DCF3DCCB1BB0350500CBB5A7 /* 238221586.jpeg */,
+				DCF3DCCC1BB0350500CBB5A7 /* 424324.jpeg */,
+				DCF3DCCD1BB0350500CBB5A7 /* 50.jpeg */,
+				DCF3DCCE1BB0350500CBB5A7 /* 7735164184.jpeg */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		DCF3DCD51BB0351100CBB5A7 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				DCF3DCD61BB0351100CBB5A7 /* 3461756566.jpeg */,
+				DCF3DCD71BB0351100CBB5A7 /* 4934348604.jpeg */,
+				DCF3DCD81BB0351100CBB5A7 /* 603564546.jpeg */,
+				DCF3DCD91BB0351100CBB5A7 /* 6289891986.jpeg */,
+				DCF3DCDA1BB0351100CBB5A7 /* 926680527.jpeg */,
+			);
+			name = image;
+			path = icon/image;
+			sourceTree = "<group>";
+		};
 		DCF855111BA5048C00FC3990 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +161,14 @@
 				DCF855271BA5048C00FC3990 /* Main.storyboard */,
 				DCF855431BA50A8A00FC3990 /* YZBasicInfoViewController.h */,
 				DCF855441BA50A8A00FC3990 /* YZBasicInfoViewController.m */,
+				DCF3DCBA1BB032A700CBB5A7 /* YZSelectOilTableViewController.h */,
+				DCF3DCBB1BB032A700CBB5A7 /* YZSelectOilTableViewController.m */,
+				DCF3DCBD1BB0330E00CBB5A7 /* HMStatusCell.h */,
+				DCF3DCBE1BB0330E00CBB5A7 /* HMStatusCell.m */,
+				DCF3DCBF1BB0330E00CBB5A7 /* HMStatus.h */,
+				DCF3DCC01BB0330E00CBB5A7 /* HMStatus.m */,
+				DCF3DCC11BB0330E00CBB5A7 /* StatusFrame.h */,
+				DCF3DCC21BB0330E00CBB5A7 /* StatusFrame.m */,
 				DCF8552A1BA5048C00FC3990 /* Images.xcassets */,
 				DCF8552C1BA5048C00FC3990 /* LaunchScreen.xib */,
 				DCF8554F1BA50F6B00FC3990 /* Lib */,
@@ -110,6 +180,9 @@
 		DCF8551D1BA5048C00FC3990 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCF3DCD51BB0351100CBB5A7 /* image */,
+				DCF3DCC81BB0350500CBB5A7 /* icon */,
+				DCF3DCC61BB0333600CBB5A7 /* statuses.plist */,
 				DCF8551E1BA5048C00FC3990 /* Info.plist */,
 				DCF8551F1BA5048C00FC3990 /* main.m */,
 			);
@@ -233,10 +306,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF3DCDE1BB0351100CBB5A7 /* 6289891986.jpeg in Resources */,
+				DCF3DCD31BB0350500CBB5A7 /* 50.jpeg in Resources */,
+				DCF3DCD21BB0350500CBB5A7 /* 424324.jpeg in Resources */,
+				DCF3DCD41BB0350500CBB5A7 /* 7735164184.jpeg in Resources */,
 				DCF855291BA5048C00FC3990 /* Main.storyboard in Resources */,
+				DCF3DCCF1BB0350500CBB5A7 /* 1.jpeg in Resources */,
 				DCF855571BA50F6B00FC3990 /* MBProgressHUD.bundle in Resources */,
+				DCF3DCC71BB0333600CBB5A7 /* statuses.plist in Resources */,
+				DCF3DCDD1BB0351100CBB5A7 /* 603564546.jpeg in Resources */,
 				DCF8552E1BA5048C00FC3990 /* LaunchScreen.xib in Resources */,
+				DCF3DCDC1BB0351100CBB5A7 /* 4934348604.jpeg in Resources */,
+				DCF3DCDB1BB0351100CBB5A7 /* 3461756566.jpeg in Resources */,
+				DCF3DCD01BB0350500CBB5A7 /* 1516159990.jpeg in Resources */,
 				DCF8552B1BA5048C00FC3990 /* Images.xcassets in Resources */,
+				DCF3DCD11BB0350500CBB5A7 /* 238221586.jpeg in Resources */,
+				DCF3DCDF1BB0351100CBB5A7 /* 926680527.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +341,11 @@
 			files = (
 				DCF855261BA5048C00FC3990 /* ViewController.m in Sources */,
 				DCF855581BA50F6B00FC3990 /* MBProgressHUD.m in Sources */,
+				DCF3DCC31BB0330E00CBB5A7 /* HMStatusCell.m in Sources */,
 				DCF855561BA50F6B00FC3990 /* MBProgressHUD+MJ.m in Sources */,
+				DCF3DCBC1BB032A700CBB5A7 /* YZSelectOilTableViewController.m in Sources */,
+				DCF3DCC51BB0330E00CBB5A7 /* StatusFrame.m in Sources */,
+				DCF3DCC41BB0330E00CBB5A7 /* HMStatus.m in Sources */,
 				DCF855231BA5048C00FC3990 /* AppDelegate.m in Sources */,
 				DCF855451BA50A8A00FC3990 /* YZBasicInfoViewController.m in Sources */,
 				DCF855201BA5048C00FC3990 /* main.m in Sources */,
@@ -454,6 +543,7 @@
 				DCF8553F1BA5048C00FC3990 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCF855401BA5048C00FC3990 /* Build configuration list for PBXNativeTarget "爱皂坊beta1Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +552,7 @@
 				DCF855421BA5048C00FC3990 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

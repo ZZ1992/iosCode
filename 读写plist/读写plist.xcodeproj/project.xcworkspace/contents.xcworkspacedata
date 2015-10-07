@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../StudentModel.h">
+   </FileRef>
+   <FileRef
+      location = "group:../StudentModel.m">
+   </FileRef>
+   <FileRef
+      location = "group:../&#x8bfb;&#x5199;plist/StudentCell.h">
+   </FileRef>
+   <FileRef
+      location = "group:../&#x8bfb;&#x5199;plist/StudentCell.m">
+   </FileRef>
+   <FileRef
+      location = "group:../myinfoTableViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:../myinfoTableViewController.m">
+   </FileRef>
+   <FileRef
+      location = "group:../SaveStudentMessagePlist.h">
+   </FileRef>
+   <FileRef
+      location = "group:../SaveStudentMessagePlist.m">
+   </FileRef>
+   <FileRef
+      location = "self:&#x8bfb;&#x5199;plist.xcodeproj">
+   </FileRef>
+</Workspace>

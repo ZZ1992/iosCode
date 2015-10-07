@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0AC5EEE8-E19B-4638-A4B2-21B9BF60CDD3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>查看大图</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7FC548DD8A4E676C496DFCAD93D088491796034C</key>
 		<string>https://github.com/zhuyaguang/iosCode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>查看大图/查看大图.xcodeproj</string>
+	<string>查看大图/查看大图.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7FC548DD8A4E676C496DFCAD93D088491796034C</key>

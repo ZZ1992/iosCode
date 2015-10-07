@@ -121,9 +121,9 @@
 				DCF0B3431B87035D000B5EC6 /* Supporting Files */,
 				DCF0B3E41B8D4951000B5EC6 /* statuses.plist */,
 				DCF0B3721B870A74000B5EC6 /* StatusCell.h */,
+				DCF0B3731B870A74000B5EC6 /* StatusCell.m */,
 				DCF0B3691B870445000B5EC6 /* Status.h */,
 				DCF0B36A1B870445000B5EC6 /* Status.m */,
-				DCF0B3731B870A74000B5EC6 /* StatusCell.m */,
 			);
 			path = "微博";
 			sourceTree = "<group>";
